@@ -9,15 +9,21 @@ If you are unfamiliar with installing python and python packages on your compute
 
 Anaconda is our recommended way to install and maintain python on your system. If you have a python installation already and do not need the guidance through anaconda, there is a brief expert section further below. For everyone else: if you have followed the above installation instructions for anaconda, the following section will guide you through setting up these notebooks with anaconda on your computer step by step.
 
-### Setup with anaconda (recommended)
-
-If you have followed the installation instructions linked above, you should either have the anaconda navigator application (on Windows and macOS), or at least a command-line with access to the conda package manager. The first step after that is to download a copy of this repository. This can be done by either using the green download button at the top of this page, or by cloning the repository in the command line:
+The first step after that is to download a copy of this repository. This can be done by either using the green download button at the top of this page, which will give you a zip file with the contents of this repository. Or – if you want to use the command line, clone the repository with the `git clone` command:
 ```
 git clone https://github.com/knutzk/ml-workshop.git
 ```
-Afterwards, continue with one of the two following bullet points:
-- With anaconda navigator: still to be written ...
-- With command-line access to conda: still to be written ...
+Then, continue with one of the two following steps.
+
+### Setup with Anaconda Navigator (Windows and macOS, recommended)
+
+If you have followed the installation instructions linked above, you should have the Anaconda Navigator application (on Windows and macOS). Open the application and navigate to "Environments" on the left-hand side. Then, click on the Import button at the bottom of the list of environments and choose the `ml-environment.yml` file, that is part of your downloaded copy of this repository. You can skip the filling of the name, it should automatically be filled after choosing the file to import. Confirm the import, which will create a custom environment called "ml" which contains all the packages needed for the hands-on tutorials. The setup might take a while, because some of the packages have to be downloaded.
+
+After the environment "ml" was created, it should show up in the list of environments. Click on the triangular "play" button next of the "ml" environment and choose "Open with Jupyter Notebook". This opens a new tab in your default web browser, with the Jupyter Notebook logo at the top of the page, and a display of your user directory. Navigate to the folder, to which you downloaded the copy of this repository, enter the repository, then open the test file `01_test_notebook.ipynb`. Go through the notebook to verify your anaconda and python installation.
+
+### Setup with conda in the command line (Linux, recommended)
+
+Still to be written ...
 
 ### Setup without anaconda (experts)
 
