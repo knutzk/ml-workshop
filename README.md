@@ -11,7 +11,13 @@ Anaconda is our recommended way to install and maintain python on your system. I
 
 ### Setup with anaconda (recommended)
 
-Still to be written ...
+If you have followed the installation instructions linked above, you should either have the anaconda navigator application (on Windows and macOS), or at least a command-line with access to the conda package manager. The first step after that is to download a copy of this repository. This can be done by either using the green download button at the top of this page, or by cloning the repository in the command line:
+```
+git clone https://github.com/knutzk/ml-workshop.git
+```
+Afterwards, continue with one of the two following bullet points:
+- With anaconda navigator: still to be written ...
+- With command-line access to conda: still to be written ...
 
 ### Setup without anaconda (experts)
 
