@@ -2,6 +2,10 @@
 
 This repository is a collection of jupyter notebooks to teach you the basics of machine learning. They provide easy access to out-of-the-box code examples, and they are meant to give insights into the most basic machine-learning algorithms.
 
+Many of the code examples are taken from or inspired by Ref. [1], a book I can only recommend to study for hands-on examples of machine learning. All code examples of the book are available in the A. Geron's [github repository](https://github.com/ageron/handson-ml). To acknowledge his work, this repository is made available under the same licensing terms using the Apache License 2.0. Please make sure to follow the respective conditions of this license when distributing or using this repository.
+
+[1] A. Geron, _Hands-On Machine Learning with Scikit-Learn and TensorFlow_, O'Reilly 2017, ISBN: 978-1491962299
+
 If you are unfamiliar with installing python and python packages on your computer, please check out the [installation instructions](INSTALLATION.md). In these instructions, we give a step-by-step guidance how to install the _anaconda_ package management system on your computer. Anaconda is our recommended way to install and maintain python on your system. If you have a python installation already and do not need the guidance through anaconda, there is a brief expert section further below. For everyone else: please go through the following steps to set up your machine-learning environment with anaconda.
 
 Even without setup, the content of the Jupyter Notebooks can be opened directly by just clicking on them in the list of files above. Or use the slightly more comfortable [notebook viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/) (which is also faster).
