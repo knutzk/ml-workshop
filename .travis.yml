@@ -5,7 +5,7 @@ services:
 
 before_install:
   - docker build -t jp-tf-nb .
-  - docker run -d -u $(id -u):$(id -g) -p 8888:8888 --entrypoint /bin/bash jp-tf-nb
+  - docker run --rm -u $(id -u):$(id -g) -P jp-tf-nb jupyter --version
 
 script:
-  - jupyter nbconvert --execute 01_test_notebook.ipynb
+  - docker run --rm -u $(id -u):$(id -g) -P jp-tf-nb jupyter nbconvert --execute 01_test_notebook.ipynb
