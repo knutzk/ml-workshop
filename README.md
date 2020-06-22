@@ -1,5 +1,7 @@
 # ML workshop: hands-on jupyter notebooks
 
+[![Build Status](https://travis-ci.org/knutzk/ml-workshop.svg?branch=master)](https://travis-ci.org/knutzk/ml-workshop)
+
 This repository is a collection of jupyter notebooks to teach you the basics of machine learning. They provide easy access to out-of-the-box code examples, and they are meant to give insights into the most basic machine-learning algorithms.
 
 Many of the code examples are taken from or inspired by Ref. [1], a book I can only recommend to study for hands-on examples of machine learning. All code examples of the book are available in the A. Geron's [github repository](https://github.com/ageron/handson-ml). To acknowledge his work, this repository is made available under the same licensing terms using the Apache License 2.0. Please make sure to follow the respective conditions of this license when distributing or using this repository.
