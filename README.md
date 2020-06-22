@@ -52,6 +52,19 @@ conda deactivate
 ```
 
 
+### Setup with docker (experts)
+
+This introduction is meant for people who are fimilar with using docker and executing codes in docker containers. This repository comes with a docker file that builds an image with all packages required for the execution of the notebooks. The image can either be downloaded as `knutzk/ml-workshop:latest` from the [docker hub](https://hub.docker.com/r/knutzk/ml-workshop) or it can be built from this repository directly:
+```
+docker build -t ml-workshop-image .
+```
+Then, a jupyter notebook server can be started as a docker container with the following command:
+```
+docker run --rm -u $(id -u):$(id -g) -p 8888:8888 -v $PWD:/data ml-workshop-image
+```
+This starts a docker container with the correct user ID (via `id -u`, running as root is not allowed for jupyter notebooks), binds port 8888 to that of the localhost and mounts the working directory to the `/data` endpoint in the notebook. The notebook server can then be reached by opening http://localhost:8888/ in a browser of choice. The webpage will require a token that can be found in the command line output when starting the docker container.
+
+
 ### Setup without anaconda (experts)
 
 This instruction is meant for people who are already familiar with python package managers, possibly use virtual environments etc. In that case, we assume you are familiar with installing, updating and maintaining python packages, and that your environment is configured correctly. Make sure you have the [required packages](ml-environment.yml) installed in a recent version. These include:
