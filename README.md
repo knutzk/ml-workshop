@@ -54,7 +54,7 @@ conda deactivate
 
 ### Setup with docker (experts)
 
-This introduction is meant for people who are fimilar with using docker and executing codes in docker containers. This repository comes with a docker file that builds an image with all packages required for the execution of the notebooks. The image can either be downloaded as `knutzk/ml-workshop:latest` from the [docker hub](https://hub.docker.com/r/knutzk/ml-workshop) or it can be built from this repository directly:
+This introduction is meant for people who are familiar with using docker and executing codes in docker images/containers. Docker images provide self-contained setups of libraries and packages and allow executing code on different systems under the same conditions. This repository comes with a docker file that builds an image with all packages required for the execution of the notebooks. The image can either be downloaded as `knutzk/ml-workshop:latest` from the [docker hub](https://hub.docker.com/r/knutzk/ml-workshop) or it can be built from this repository directly:
 ```
 docker build -t ml-workshop-image .
 ```
