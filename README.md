@@ -56,6 +56,7 @@ conda deactivate
 
 This introduction is meant for people who are familiar with using docker and executing codes in docker images/containers. Docker images provide self-contained setups of libraries and packages and allow executing code on different systems under the same conditions. This repository comes with a docker file that builds an image with all packages required for the execution of the notebooks. The image can either be downloaded as `knutzk/ml-workshop:latest` from the [docker hub](https://hub.docker.com/r/knutzk/ml-workshop) or it can be built from this repository directly:
 ```
+cd <path to downloaded copy>/ml-workshop/
 docker build -t ml-workshop-image .
 ```
 Then, a jupyter notebook server can be started as a docker container with the following command:
