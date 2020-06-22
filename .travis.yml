@@ -1,0 +1,11 @@
+language: python
+
+services:
+  - docker
+
+before_install:
+  - docker build -t jp-tf-nb .
+  - docker run -d --ip 0.0.0.0 --port 8888 --entrypoint /bin/bash jp-tf-nb
+
+script:
+  - jupyter nbconvert --execute 01_test_notebook.ipynb
