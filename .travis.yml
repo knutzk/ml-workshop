@@ -8,4 +8,4 @@ before_install:
   - docker run --rm -u $(id -u):$(id -g) -P jp-tf-nb jupyter --version
 
 script:
-  - docker run --rm -u $(id -u):$(id -g) -P jp-tf-nb jupyter nbconvert --execute 01_test_notebook.ipynb
+  - docker run --rm -u $(id -u):$(id -g) -P -v $PWD:/data jp-tf-nb jupyter nbconvert --execute 01_test_notebook.ipynb
