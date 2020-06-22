@@ -9,3 +9,6 @@ before_install:
 
 script:
   - docker run --rm -u $(id -u):$(id -g) -P -v $PWD:/data jp-tf-nb jupyter nbconvert --execute 01_test_notebook.ipynb
+  # - docker run --rm -u $(id -u):$(id -g) -P -v $PWD:/data jp-tf-nb jupyter nbconvert --execute 02_basics_algorithms.ipynb
+  # - docker run --rm -u $(id -u):$(id -g) -P -v $PWD:/data jp-tf-nb jupyter nbconvert --execute 03_decision_trees.ipynb
+  # - docker run --rm -u $(id -u):$(id -g) -P -v $PWD:/data jp-tf-nb jupyter nbconvert --ExecutePreprocessor.timeout=300 --execute 04_neural_nets.ipynb
