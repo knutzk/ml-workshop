@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.14.0-gpu-py3-jupyter
+FROM tensorflow/tensorflow:2.4.0-gpu-jupyter
 
 WORKDIR /data
 
@@ -15,5 +15,10 @@ RUN \
   apt-get clean -y && \
   apt-get autoremove && \
   rm -rf /var/lib/apt/lists/*
+
+# RUN groupadd -r docker -g 901 && useradd -u 901 -r -g docker docker
+# USER docker
+# ENV HOME=/user/docker
+# WORKDIR ${HOME}
 
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "-y"]
