@@ -24,7 +24,7 @@ The book exists in two versions:
 
 Even without setting up anything on your own computer, you can browse the
 content of the notebooks by just clicking on them in the list of files above. Or
-you can use the slightly more comfortable (and faster)[notebook
+you can use the slightly more comfortable (and faster) [notebook
 viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
 
 
@@ -39,10 +39,9 @@ your computer.
 
 The following steps assume that you have anaconda installed on your computer.
 
-If you have a python installation already, you can of course follow your own
-best practice for installing the necessary packages. There is also a brief
-expert section further below that you can check for more details.
-
+> N.B. If you have a python installation already, you can of course skip the
+> following steps and follow your own best practice for installing the necessary
+> packages. Please check out the expert section below for some hints.
 
 
 #### 1) Obtain a copy of this repository
