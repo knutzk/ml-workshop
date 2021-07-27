@@ -1,10 +1,15 @@
 name: ml
+
+channels:
+  - conda-forge
+  - defaults
+
 dependencies:
   - matplotlib~=3.3.0
   - notebook~=6.4.0
   - numpy~=1.19.2
-  - python=3.8.11
+  - python=3.8.8
   - scikit-learn~=0.24.0
   - seaborn~=0.11.0
-  - tensorflow=2.4.2
+  - tensorflow=2.4.1
   - python-graphviz~=0.17
