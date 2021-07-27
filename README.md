@@ -6,7 +6,7 @@ This repository is a collection of jupyter notebooks to teach you the basics of
 machine learning. They provide easy access to out-of-the-box code examples, and
 they are meant to give insights into the most basic machine-learning algorithms.
 
-Almost all of the code examples are taken from or inspired by Ref. [1], a book
+Almost all of the code examples are taken from or inspired by Ref. [2], a book
 we can only recommend to study for hands-on examples of machine learning. All
 code examples of the book are available in A. Geron's [github
 repository](https://github.com/ageron/handson-ml2). To acknowledge his work,
@@ -14,15 +14,17 @@ this repository is made available under the same licensing terms using the
 Apache License 2.0. Please make sure to follow the respective conditions of this
 license when distributing or using this repository.
 
+The book exists in two versions:
+
 [1] A. Geron, _Hands-On Machine Learning with Scikit-Learn and TensorFlow_, O'Reilly 2017, ISBN: 978-1491962299
 [2] A. Geron, _Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow_, 2nd edition, O'Reilly 2019, ISBN: 978-1492032649
 
 
 ## I only want to browse the notebooks!
 
-Even without setup, the content of the Jupyter Notebooks can be opened directly
-by just clicking on them in the list of files above. Or you can use the slightly
-more comfortable (and faster)[notebook
+Even without setting up anything on your own computer, you can browse the
+content of the notebooks by just clicking on them in the list of files above. Or
+you can use the slightly more comfortable (and faster)[notebook
 viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
 
 
@@ -31,9 +33,11 @@ viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
 Our recommended way to install python on your private computers is through the
 anaconda suite and/or through virtual environments. If these terms don't mean
 anything to you, or if you are not sure what to do, please check out the
-detailed [installation instructions](INSTALLATION.md). In these instructions, we
-give a step-by-step guidance how to install the _anaconda_ package management
-system on your computer. 
+detailed [anaconda installation instructions](INSTALLATION.md). There we give a
+step-by-step guidance how to install the _anaconda_ package management system on
+your computer.
+
+The following steps assume that you have anaconda installed on your computer.
 
 If you have a python installation already, you can of course follow your own
 best practice for installing the necessary packages. There is also a brief
@@ -76,12 +80,6 @@ environments. Activate the environment by clicking on it (it should be marked
 with a green marker). Click on the triangular "play" button next of the
 `ml-environment` environment and choose "Open with Jupyter Notebook". 
 
-This opens a new tab in your default web browser, with the Jupyter logo at the
-top of the page, and a display of your user directory. Navigate to the folder,
-to which you downloaded the copy of this repository, enter the folder, then open
-the test file [01_test_notebook.ipynb](01_test_notebook.ipynb). Go through the
-notebook to verify your python installation and the anaconda environment setup.
-
 
 #### 2b) Setup with conda in the command line (Linux, recommended)
 
@@ -114,29 +112,40 @@ Jupyter Notebook server:
 jupyter notebook
 ```
 
-This opens a new tab in your default web browser, with the Jupyter logo at the
-top of the page, and a display of your user directory. Navigate to the folder,
-to which you downloaded the copy of this repository, enter the folder, then open
-the test file [01_test_notebook.ipynb](01_test_notebook.ipynb). Go through the
-notebook to verify your python installation and the conda environemnt setup.
-After closing the browser tab, you can shut down the Jupyter notebook server
-with CTRL+C. The conda environment can be deactivated with:
+
+#### 3) Exploring the first notebook
+
+If you have followed (2a) or (2b) above, the last command opens your default web
+browser with a Jupyter webpage. The Jupyter logo should be at the top of the
+page, and the page itself should display your user directory. Now it's time to
+explore the first notebook and to verify the setup!
+
+Navigate to the folder, to which you downloaded the copy of this repository,
+enter the folder, then open the test file
+[01_test_notebook.ipynb](01_test_notebook.ipynb). Follow the instructions inside
+the notebook to verify your python installation and the anaconda environment
+setup.
+
+After closing the browser tab, your Jupyter instance closes automatically if you
+used the Anaconda Navigator in step (2a). If you opened Jupyter from the command
+line in (2b), you can shut down the Jupyter notebook server with CTRL+C. The
+conda environment can be deactivated with:
 
 ```
 conda deactivate
 ```
 
 
-#### 2c) Setup with docker (experts)
+## Setup without anaconda (experts)
 
-This introduction is meant for people who are familiar with using docker and
-executing codes in docker images/containers. Docker images provide
-self-contained setups of libraries and packages and allow executing code on
-different systems under the same conditions. This repository comes with a docker
-file that builds an image with all packages required for the execution of the
-notebooks. The image can either be downloaded as `knutzk/ml-workshop:latest`
-from the [docker hub](https://hub.docker.com/r/knutzk/ml-workshop) or it can be
-built from this repository directly:
+The above instructions are meant for people not familiar with setups of python
+versions and/or virtual environments. If you are familiar with both, of course
+you can stick to your best practices to set up an environment for this
+repository. Inter alia, this repository comes with a docker file that builds an
+image with all packages required for the execution of the notebooks. The image
+can either be downloaded as `knutzk/ml-workshop:latest` from the [docker
+hub](https://hub.docker.com/r/knutzk/ml-workshop) or it can be built from this
+repository directly:
 
 ```
 cd <path to downloaded copy>/ml-workshop/
@@ -150,28 +159,24 @@ following command:
 docker run --rm -u $(id -u):$(id -g) -p 8888:8888 -v $PWD:/data ml-workshop-image
 ```
 
-This starts a docker container with the correct user ID (via `id -u`, running as
-root is not allowed for jupyter notebooks), binds port 8888 to that of the
-localhost and mounts the working directory to the `/data` endpoint in the
-notebook. The notebook server can then be reached by opening
-http://localhost:8888/ in a browser of choice. The webpage will require a token
-that can be found in the command line output when starting the docker container.
+Transmitting the user and group ID is necessary to avoid running the docker
+container as root (which is discouraged for jupyter notebooks). It also binds
+port 8888 to that of the localhost and mounts the working directory to the
+`/data` endpoint in the notebook. The notebook server can then be reached by
+opening http://localhost:8888/ in a browser of choice. The webpage will require
+a token that can be found in the command line output when starting the docker
+container.
 
+As an alternative, you can also use virtual environments (e.g.
+`pyenv-virtualenv` or `conda`) to set up the necessary packages for this
+repository. Make sure you have the [required packages](ml-environment.yml)
+installed in a recent version. These include:
 
-#### 2d) Setup without anaconda (experts)
-
-This instruction is meant for people who are already familiar with python
-package managers, possibly use virtual environments etc. In that case, we assume
-you are familiar with installing, updating and maintaining python packages, and
-that your environment is configured correctly. Make sure you have the [required
-packages](ml-environment.yml) installed in a recent version. These include:
-
-* sklearn 0.21.*
-* tensorflow 1.14.*
-* jupyter 1.0.*
+* sklearn 0.24.*
+* tensorflow 2.4.*
 
 After installing all packages listed in the file, obtain a copy of this
-repository as described above. Start a Jupyter Notbeook server, navigate to the
-location of your repository copy, and open the Jupyter Notebook files to get
-started. Please make sure to go through the
+repository through your preferred method. Start a Jupyter Notbeook server,
+navigate to the location of your repository copy, and open the Jupyter Notebook
+files to get started. Please make sure to go through the
 [01_test_notebook.ipynb](01_test_notebook.ipynb) to verify your installation.
