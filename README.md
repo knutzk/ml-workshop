@@ -78,7 +78,7 @@ moment, because some the packages have to be downloaded and installed.
 After the environment `ml-workshop` is created, it shows up in the list of
 environments. Activate the environment by clicking on it (it should be marked
 with a green marker). Click on the triangular "play" button next of the
-`ml-environment` environment and choose "Open with Jupyter Notebook". 
+`ml-workshop` environment and choose "Open with Jupyter Notebook".
 
 
 #### 2b) Setup with conda in the command line (Linux, recommended)
@@ -96,7 +96,7 @@ conda init
 Afterwards, the custom "ml" environment can be set up. Navigate to the copy of
 this repository that you obtained in the previous step with the `cd` command.
 Then, create a new conda environment by providing the
-[ml-environment.yml](ml-environment.yml) file and activate the `ml-environment`
+[ml-environment.yml](ml-environment.yml) file and activate the `ml-workshop`
 environment. The commands are:
 
 ```
