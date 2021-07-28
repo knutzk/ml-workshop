@@ -1,4 +1,4 @@
-name: ml
+name: ml-workshop
 
 channels:
   - conda-forge
