@@ -23,9 +23,10 @@ The book exists in two versions:
 ## I only want to browse the notebooks!
 
 Even without setting up anything on your own computer, you can browse the
-content of the notebooks by just clicking on them in the list of files above. Or
-you can use the slightly more comfortable (and faster) [notebook
-viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
+content of the notebooks by just clicking on them in the list of files above. To
+see what the executed notebooks look like, you can also navigate to the
+`md_output` subdirectory and open any of the notebooks there. Or you can use the
+[notebook viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
 
 
 ## How to get started with this repository
