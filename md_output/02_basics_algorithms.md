@@ -64,7 +64,7 @@ plt.show()
 
 
     
-![png](02_basics_algorithms_draft_files/02_basics_algorithms_draft_14_0.png)
+![png](02_basics_algorithms_files/02_basics_algorithms_14_0.png)
     
 
 
@@ -168,7 +168,7 @@ plt.show()
 
 
     
-![png](02_basics_algorithms_draft_files/02_basics_algorithms_draft_33_0.png)
+![png](02_basics_algorithms_files/02_basics_algorithms_33_0.png)
     
 
 
@@ -300,7 +300,7 @@ plt.show()
 
 
     
-![png](02_basics_algorithms_draft_files/02_basics_algorithms_draft_51_0.png)
+![png](02_basics_algorithms_files/02_basics_algorithms_51_0.png)
     
 
 
@@ -463,7 +463,7 @@ plt.show()
 
 
     
-![png](02_basics_algorithms_draft_files/02_basics_algorithms_draft_75_0.png)
+![png](02_basics_algorithms_files/02_basics_algorithms_75_0.png)
     
 
 
@@ -597,7 +597,7 @@ plt.show()
 
 
     
-![png](02_basics_algorithms_draft_files/02_basics_algorithms_draft_94_0.png)
+![png](02_basics_algorithms_files/02_basics_algorithms_94_0.png)
     
 
 
