@@ -50,14 +50,11 @@ def plot_decision_boundary(clf, X, y, axes=[-2.0, 3.0, -1.5, 2.0]):
     x1, x2 = np.meshgrid(x1s, x2s)
     X_new = np.c_[x1.ravel(), x2.ravel()]
     y_pred = clf.predict(X_new).reshape(x1.shape)
-    custom_cmap = ListedColormap(['#A7D1F2','#767676','#FFC38D'])
+    custom_cmap = ListedColormap(['#FFC38D','#767676','#A7D1F2'])
     plt.contourf(x1, x2, y_pred, alpha=0.3, cmap=custom_cmap)
-    # custom_cmap2 = ListedColormap(['#7d7d58','#4c4c7f','#507d50'])
-    plt.plot(X[:, 0][y==0], X[:, 1][y==0], "o")
     plt.plot(X[:, 0][y==1], X[:, 1][y==1], "s")
-    plt.plot(X[:, 0][y==2], X[:, 1][y==2], "^")
+    plt.plot(X[:, 0][y==0], X[:, 1][y==0], "o")
     plt.axis(axes)
-    # plt.contour(x1, x2, y_pred, cmap=custom_cmap2, alpha=0.8)
     plt.xlabel(r"$x_1$", fontsize=18)
     plt.ylabel(r"$x_2$", fontsize=18, rotation=0)
 ```
