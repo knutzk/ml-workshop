@@ -292,12 +292,6 @@ And, eventually, we should evaluate the model performance on our test data:
 model.evaluate(X_test, y_test)
 ```
 
-    313/313 [==============================] - 0s 259us/step - loss: 0.3082 - accuracy: 0.9124
-
-
-
-
-
     [0.30815207958221436, 0.9124000072479248]
 
 
@@ -401,12 +395,6 @@ Let's also evaluate the model on our test dataset.
 ```python
 model.evaluate(X_test, y_test)
 ```
-
-    313/313 [==============================] - 0s 360us/step - loss: 0.1833 - accuracy: 0.9456
-
-
-
-
 
     [0.18333709239959717, 0.9455999732017517]
 
@@ -525,12 +513,6 @@ Let's also evaluate the model on our test dataset.
 ```python
 model.evaluate(X_test, y_test)
 ```
-
-    313/313 [==============================] - 0s 286us/step - loss: 1.6630 - accuracy: 0.6855
-
-
-
-
 
     [1.6629533767700195, 0.6855000257492065]
 
