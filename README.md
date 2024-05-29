@@ -1,6 +1,6 @@
 # ML workshop: hands-on jupyter notebooks
 
-[![Build Status](https://travis-ci.org/knutzk/ml-workshop.svg?branch=master)](https://travis-ci.org/knutzk/ml-workshop)
+![Build Status](https://github.com/knutzk/ml-workshop/actions/workflows/build_run_test.yml/badge.svg)
 
 This repository is a collection of jupyter notebooks to teach you the basics of
 machine learning. They provide easy access to out-of-the-box code examples, and
