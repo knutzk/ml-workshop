@@ -9,27 +9,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Print basic job parameters
+        run: |
           echo "🎉 Job triggered by ${{ github.event_name }} event."
-      - run: |
           echo "🐧 Job running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: |
           echo "🔎 Branch: ${{ github.ref }}; repository: ${{ github.repository }}."
       - name: Set up python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10.14'
-      - name: Print out installed python version
-        run: |
-          python --version
-      - name: Upgrade pip, setuptools, wheel
+      - name: Upgrade pip and install packages
         run: |
           pip install --upgrade pip setuptools wheel
-      - name: Install required packages
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Print out python version and packages
         run: |
-          pip install -r requirements.txt
-      - name: Print out installed pip packages
-        run: |
+          python --version
           pip freeze
       - name: Convert test notebook
         run: |
