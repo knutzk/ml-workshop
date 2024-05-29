@@ -25,7 +25,7 @@ jobs:
       - name: Print out python version and packages
         run: |
           python --version
-          python -m pip freeze
+          python -m pip list
       - name: Convert test notebook
         run: |
           python -m jupyter nbconvert --execute --to html 01_test_notebook.ipynb
