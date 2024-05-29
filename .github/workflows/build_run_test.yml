@@ -9,29 +9,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: |
+          echo "🎉 Job triggered by ${{ github.event_name }} event."
+      - run: |
+          echo "🐧 Job running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: |
+          echo "🔎 Branch: ${{ github.ref }}; repository: ${{ github.repository }}."
       - name: Set up python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10.14'
       - name: Print out installed python version
-        run: python --version
+        run: |
+          python --version
       - name: Upgrade pip, setuptools, wheel
-        run: pip install --upgrade pip setuptools wheel
+        run: |
+          pip install --upgrade pip setuptools wheel
       - name: Install required packages
-        run: pip install -r requirements.txt
-  test_notebook:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print out installed python version
-        run: python --version
+        run: |
+          pip install -r requirements.txt
       - name: Print out installed pip packages
-        run: pip freeze
-      - run: jupyter nbconvert --execute --to html 01_test_notebook.ipynb
+        run: |
+          pip freeze
+      - name: Convert test notebook
+        run: |
+          jupyter nbconvert --execute --to html 01_test_notebook.ipynb
   docker:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       -
