@@ -6,18 +6,19 @@ This repository is a collection of jupyter notebooks to teach you the basics of
 machine learning. They provide easy access to out-of-the-box code examples, and
 they are meant to give insights into the most basic machine-learning algorithms.
 
-Almost all of the code examples are taken from or inspired by Ref. [2], a book
+Almost all the code examples are taken from or inspired by Ref. [3], a book
 we can only recommend to study for hands-on examples of machine learning. All
 code examples of the book are available in A. Geron's [github
-repository](https://github.com/ageron/handson-ml2). To acknowledge his work,
+repository](https://github.com/ageron/handson-ml3). To acknowledge his work,
 this repository is made available under the same licensing terms using the
-Apache License 2.0. Please make sure to follow the respective conditions of this
-license when distributing or using this repository.
+Apache licence 2.0. Please make sure to follow the respective conditions of this
+licence when distributing or using this repository.
 
-The book exists in two versions:
+The book exists in three versions:
 
 [1] A. Geron, _Hands-On Machine Learning with Scikit-Learn and TensorFlow_, O'Reilly 2017, ISBN: 978-1491962299
 [2] A. Geron, _Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow_, 2nd edition, O'Reilly 2019, ISBN: 978-1492032649
+[3] A. Geron, _Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_, 3rd edition, O'Reilly 2022, ISBN: 978-1098125974
 
 
 ## I only want to browse the notebooks!
@@ -32,13 +33,13 @@ see what the executed notebooks look like, you can also navigate to the
 ## How to get started with this repository
 
 Our recommended way to install python on your private computers is through the
-anaconda suite and/or through virtual environments. If these terms don't mean
+_anaconda_ suite and/or through virtual environments. If these terms don't mean
 anything to you, or if you are not sure what to do, please check out the
 detailed [anaconda installation instructions](INSTALLATION.md). There we give a
 step-by-step guidance how to install the _anaconda_ package management system on
 your computer.
 
-The following steps assume that you have anaconda installed on your computer.
+The following steps assume that you have _anaconda_ installed on your computer.
 
 > N.B. If you have a python installation already, you can of course skip the
 > following steps and follow your own best practice for installing the necessary
@@ -172,8 +173,8 @@ As an alternative, you can also use virtual environments (e.g.
 repository. Make sure you have the [required packages](ml-environment.yml)
 installed in a recent version. These include:
 
-* sklearn 0.24.*
-* tensorflow 2.4.*
+* sklearn 1.2.*
+* tensorflow 2.15.*
 
 After installing all packages listed in the file, obtain a copy of this
 repository through your preferred method. Start a Jupyter Notbeook server,
