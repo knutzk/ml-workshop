@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Print basic job parameters
         run: |
           echo "🎉 Job triggered by ${{ github.event_name }} event."
