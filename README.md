@@ -17,20 +17,31 @@ licence when distributing or using this repository.
 The book exists in three versions:
 
 [1] A. Geron, _Hands-On Machine Learning with Scikit-Learn and TensorFlow_, O'Reilly 2017, ISBN: 978-1491962299
+
 [2] A. Geron, _Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow_, 2nd edition, O'Reilly 2019, ISBN: 978-1492032649
+
 [3] A. Geron, _Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_, 3rd edition, O'Reilly 2022, ISBN: 978-1098125974
 
 
-## I only want to browse the notebooks!
+## Running the Notebooks on Google Colab
 
-Even without setting up anything on your own computer, you can browse the
-content of the notebooks by just clicking on them in the list of files above. To
-see what the executed notebooks look like, you can also navigate to the
-`md_output` subdirectory and open any of the notebooks there. Or you can use the
-[notebook viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
+To easily view and execute the notebooks without setting up Python on your 
+computer, use Google Colab. All you need is a Google account. Simply click 
+the link below to open Google Colab, and then select the notebook you'd like
+to work with:
+[Open with Google Colab](https://colab.research.google.com/github/knutzk/ml-workshop/).
+
+## Viewing the Notebooks
+
+You can explore the content of the notebooks directly through the
+[Jupyter Notebook Viewer](https://nbviewer.jupyter.org/github/knutzk/ml-workshop/).
+Additionally, you can open any notebook by clicking on the files listed above. 
+If you'd like to see the results of pre-executed notebooks, navigate to the 
+`md_output` subdirectory, where you can view any notebooks with their output 
+included.
 
 
-## How to get started with this repository
+## Installing python
 
 Our recommended way to install python on your private computers is through the
 _anaconda_ suite and/or through virtual environments. If these terms don't mean
